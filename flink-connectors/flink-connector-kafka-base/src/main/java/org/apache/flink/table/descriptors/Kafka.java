@@ -48,6 +48,7 @@ import static org.apache.flink.table.descriptors.KafkaValidator.CONNECTOR_TOPIC;
 import static org.apache.flink.table.descriptors.KafkaValidator.CONNECTOR_TYPE_VALUE_KAFKA;
 
 /**
+ * kafka 连接器的配置
  * Connector descriptor for the Apache Kafka message queue.
  */
 public class Kafka extends ConnectorDescriptor {
@@ -156,6 +157,8 @@ public class Kafka extends ConnectorDescriptor {
 	/**
 	 * Configures to start reading partitions from specific offsets, set independently for each partition.
 	 * Resets previously set offsets.
+	 *
+	 * 配置从特定偏移量读取分区，每个分区独立设置。重置以前设置的偏移量
 	 *
 	 * @param specificOffsets the specified offsets for partitions
 	 * @see FlinkKafkaConsumerBase#setStartFromSpecificOffsets(Map)

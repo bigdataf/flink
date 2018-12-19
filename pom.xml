@@ -597,13 +597,13 @@ under the License.
 			<build>
 				<pluginManagement>
 					<plugins>
-						<plugin>
+						<!--<plugin>
 							<groupId>org.apache.rat</groupId>
 							<artifactId>apache-rat-plugin</artifactId>
 							<configuration>
 								<skip>true</skip>
 							</configuration>
-						</plugin>
+						</plugin>-->
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-checkstyle-plugin</artifactId>
@@ -1066,6 +1066,7 @@ under the License.
 					</licenseFamilies>
 					<excludes>
 						<!-- Additional files like .gitignore etc.-->
+						<exclude>**/**/**</exclude>
 						<exclude>**/.*/**</exclude>
 						<exclude>**/*.prefs</exclude>
 						<exclude>**/*.log</exclude>
